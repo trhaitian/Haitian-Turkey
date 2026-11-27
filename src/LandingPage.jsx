@@ -20,10 +20,15 @@ import Ma4800 from "./Images/Ma4800.png";
 
 import Ma1600 from "./Images/Ma1600.png";
 import Crusher from "./Images/Crusher.png";
-import HTDL50FW from "./Images/HTDL50FW.png"
+import HTDL50FW from "./Images/HTDL50FW.png";
 import Robot from "./Images/Robot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faGlobe, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAt,
+  faGlobe,
+  faPhone,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 import confetti from "canvas-confetti";
@@ -40,7 +45,7 @@ function useRevealOnScroll() {
           observer.unobserve(entry.target); // run once
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -59,8 +64,7 @@ export default function LandingPage() {
   const [card2Ref, card2Visible] = useRevealOnScroll();
   const [card3Ref, card3Visible] = useRevealOnScroll();
   const [card4Ref, card4Visible] = useRevealOnScroll();
-    const [card5Ref, card5Visible] = useRevealOnScroll();
-
+  const [card5Ref, card5Visible] = useRevealOnScroll();
 
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
@@ -180,8 +184,6 @@ export default function LandingPage() {
                 interval={3000}
                 data-bs-theme="light"
               >
-              
-
                 <Carousel.Item>
                   <img
                     className="d-block w-100 carousel-img rounded-3"
@@ -210,7 +212,7 @@ export default function LandingPage() {
                     alt="Event Slide 5"
                   />
                 </Carousel.Item>
-                  <Carousel.Item>
+                <Carousel.Item>
                   <img
                     className="d-block w-100 carousel-img rounded-3"
                     src={Stall1}
@@ -271,10 +273,10 @@ export default function LandingPage() {
                       MA1600V/570
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 4 cavity reflectors</p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: VD-1100ID
+                        Product: 4 cavity reflectors
                       </p>
+                      <p className="m-0 p-0 haitianColor">Robot: VD-1100ID</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -291,10 +293,10 @@ export default function LandingPage() {
                       MA1600V/570
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 4 cavity reflectors</p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: VD-1100ID
+                        Product: 4 cavity reflectors
                       </p>
+                      <p className="m-0 p-0 haitianColor">Robot: VD-1100ID</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -309,8 +311,6 @@ export default function LandingPage() {
                 </Card.Body>
               </Card>
             </div>
-
-           
 
             {/* CARD 3 */}
             {/* <div className="col-lg-3 mt-3 mt-lg-0"> */}
@@ -343,9 +343,7 @@ export default function LandingPage() {
                       <p className="m-0 p-0 haitianColor">
                         Product: 22L Rubbish bins
                       </p>
-                      <p className="m-0 p-0 haitianColor">
-                        Robot: V-1300
-                      </p>
+                      <p className="m-0 p-0 haitianColor">Robot: V-1300</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -365,9 +363,7 @@ export default function LandingPage() {
                       <p className="m-0 p-0 haitianColor">
                         Product: 22L Rubbish bins
                       </p>
-                      <p className="m-0 p-0 haitianColor">
-                        Robot: V-1300
-                      </p>
+                      <p className="m-0 p-0 haitianColor">Robot: V-1300</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -383,7 +379,7 @@ export default function LandingPage() {
               </Card>
             </div>
 
-             {/* CARD 2 */}
+            {/* CARD 2 */}
             {/* <div className="col-lg-3 mt-3 mt-lg-0"> */}
             <div
               ref={card2Ref}
@@ -411,11 +407,11 @@ export default function LandingPage() {
                       ZE4500VF-1700hs
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 4 cavity 1L Cheese box</p>
-
                       <p className="m-0 p-0 haitianColor">
-                        Robot: VD-1300ID
+                        Product: 4 cavity 1L Cheese box
                       </p>
+
+                      <p className="m-0 p-0 haitianColor">Robot: VD-1300ID</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -432,11 +428,11 @@ export default function LandingPage() {
                       ZE4500VF-1700hs
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 4 cavity 1L Cheese box</p>
-
                       <p className="m-0 p-0 haitianColor">
-                        Robot: VD-1300ID
+                        Product: 4 cavity 1L Cheese box
                       </p>
+
+                      <p className="m-0 p-0 haitianColor">Robot: VD-1300ID</p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
@@ -509,7 +505,7 @@ export default function LandingPage() {
                       Crusher
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Model: HTGS320/W</p> 
+                      <p className="m-0 p-0 haitianColor">Model: HTGS320/W</p>
                     </Card.Text>
                   </div>
                 </Card.Body>
@@ -532,18 +528,18 @@ export default function LandingPage() {
                     alt="HTDL50FW image"
                   />
                 </div>
-                <Card.Body> 
+                <Card.Body>
                   <div className="content-default">
                     <Card.Title className="haitianColor cardTittleFont">
                       Three in one HTDL-50F/W
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Model: HTDL-50F/W</p> 
+                      <p className="m-0 p-0 haitianColor">Model: HTDL-50F/W</p>
                     </Card.Text>
                   </div>
                 </Card.Body>
               </Card>
-            </div>  
+            </div>
           </div>
         </div>
 
@@ -567,13 +563,13 @@ export default function LandingPage() {
                 />
               </div>
               {/* Contact Person */}
-<div className="col-12 col-lg-2 footer-item">
-                  <FontAwesomeIcon icon={faUser} />
+              <div className="col-12 col-lg-2 footer-item">
+                <FontAwesomeIcon icon={faUser} />
 
-  <span className="haitianColor fw-semibold ms-2">
-    Jamen Wang
-  </span>
-</div>
+                <span className="haitianColor fw-semibold ms-2">
+                  Jamen Wang
+                </span>
+              </div>
 
               {/* Phone */}
               <div className="col-12 col-lg-2 footer-item">

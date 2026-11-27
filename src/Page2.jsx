@@ -4,7 +4,7 @@ import HaitianLogo from "./Images/HaitianTurkeylogo.png";
 import EventLogo from "./Images/EventLogo.png";
 import Product3 from "./Images/Cheesebox.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAt, faGlobe, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 
@@ -154,61 +154,69 @@ export default function Page2() {
         }`}
       >
         <div className="container py-4">
-          <div className="row align-items-center footer-row">
-            {/* Logo */}
-            <div className="col-12 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center justify-content-lg-start">
-              <img
-                src={HaitianLogo}
-                alt="Haitian Logo"
-                className="footer-logo"
-                onClick={() =>
-                  window.open("https://www.haitian.com.tr/", "_blank")
-                }
-              />
-            </div>
+            <div className="row align-items-center footer-row">
+              {/* Logo */}
+              <div className="col-12 col-lg-3 mb-3 mb-lg-0 d-flex justify-content-center justify-content-lg-start">
+                <img
+                  src={HaitianLogo}
+                  alt="Haitian Logo"
+                  className="footer-logo"
+                  onClick={() =>
+                    window.open("https://www.haitian.com.tr/", "_blank")
+                  }
+                />
+              </div>
+              {/* Contact Person */}
+              <div className="col-12 col-lg-2 footer-item">
+                <FontAwesomeIcon icon={faUser} />
 
-            {/* Phone */}
-            <div className="col-12 col-lg-3 footer-item">
-              <FontAwesomeIcon icon={faPhone} />
-              <a
-                className="ms-2 haitianColor text-decoration-none"
+                <span className="haitianColor fw-semibold ms-2">
+                  Jamen Wang
+                </span>
+              </div>
+
+              {/* Phone */}
+              <div className="col-12 col-lg-2 footer-item">
+                <FontAwesomeIcon icon={faPhone} />
+                <a
+                  className="ms-2 haitianColor text-decoration-none"
                   href="tel:+905323581889"
-              >
-                  +90 532 358 1889
-              </a>
+                >
+                  +90 536 882 39 75
+                </a>
+              </div>
+
+              {/* Website */}
+              <div className="col-12 col-lg-2 footer-item">
+                <FontAwesomeIcon icon={faGlobe} />
+                <a
+                  href="https://www.haitian.com.tr/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="ms-2 haitianColor text-decoration-none"
+                >
+                  www.haitian.com.tr
+                </a>
+              </div>
+
+              {/* Email */}
+              <div className="col-12 col-lg-3 footer-item ">
+                <FontAwesomeIcon icon={faAt} />
+                <a
+                  href="mailto:bulent.yuksel@haitian.com.tr"
+                  className="ms-2 haitianColor text-decoration-none"
+                >
+                  wmj13575@mail.haitian.com
+                </a>
+              </div>
             </div>
 
-            {/* Website */}
-            <div className="col-12 col-lg-3 footer-item">
-              <FontAwesomeIcon icon={faGlobe} />
-              <a
-                href="https://www.haitian.com.tr/"
-                target="_blank"
-                rel="noreferrer"
-                className="ms-2 haitianColor text-decoration-none"
-              >
-                www.haitian.com.tr
-              </a>
-            </div>
+            <hr className="footer-divider" />
 
-            {/* Email */}
-            <div className="col-12 col-lg-3 footer-item ">
-              <FontAwesomeIcon icon={faAt} />
-              <a
-                href="mailto:bulent.yuksel@haitian.com.tr"
-                className="ms-2 haitianColor text-decoration-none"
-              >
-                bulent.yuksel@haitian.com.tr
-              </a>
+            <div className="text-center small haitianColor">
+              © 2026 Haitian Turkey. All rights reserved.
             </div>
           </div>
-
-          <hr className="footer-divider" />
-
-          <div className="text-center small haitianColor">
-            © 2025 Haitian Turkey. All rights reserved.
-          </div>
-        </div>
       </div>
     </div>
   );
