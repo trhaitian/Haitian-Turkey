@@ -7,10 +7,20 @@ import HaitianLogo from "./Images/HaitianTurkeylogo.png";
 import EventLogo from "./Images/EventLogo.png";
 import Event1 from "./Images/EventImage1.png";
 import Event2 from "./Images/EventImage2.png";
-import ZEMachine from "./Images/ZEMachine.png";
-import Ma3800 from "./Images/Ma3800.png";
-import Mars from "./Images/MarsMachine.png";
-import Haitian from "./Images/Haitian.png";
+import Stall1 from "./Images/Stall1.png";
+import Stall2 from "./Images/Stall2.png";
+import Stall3 from "./Images/Stall3.png";
+import Stall4 from "./Images/Stall4.png";
+import Stall5 from "./Images/Stall5.png";
+import Stall6 from "./Images/Stall6.png";
+import Stall7 from "./Images/Stall7.png";
+
+import Ze4500 from "./Images/Ze4500.png";
+import Ma4800 from "./Images/Ma4800.png";
+
+import Ma1600 from "./Images/Ma1600.png";
+import Crusher from "./Images/Crusher.png";
+import HTDL50FW from "./Images/HTDL50FW.png"
 import Robot from "./Images/Robot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +59,8 @@ export default function LandingPage() {
   const [card2Ref, card2Visible] = useRevealOnScroll();
   const [card3Ref, card3Visible] = useRevealOnScroll();
   const [card4Ref, card4Visible] = useRevealOnScroll();
+    const [card5Ref, card5Visible] = useRevealOnScroll();
+
 
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
@@ -166,21 +178,57 @@ export default function LandingPage() {
               <Carousel
                 className="flip-carousel"
                 interval={3000}
-                data-bs-theme="dark"
+                data-bs-theme="light"
               >
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100 carousel-img"
-                    src={Event1}
-                    alt="Event Slide 1"
-                  />
-                </Carousel.Item>
+              
 
                 <Carousel.Item>
                   <img
-                    className="d-block w-100 carousel-img"
-                    src={Event2}
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall2}
                     alt="Event Slide 2"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall3}
+                    alt="Event Slide 3"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall4}
+                    alt="Event Slide 4"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall5}
+                    alt="Event Slide 5"
+                  />
+                </Carousel.Item>
+                  <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall1}
+                    alt="Event Slide 1"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall6}
+                    alt="Event Slide 6"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100 carousel-img rounded-3"
+                    src={Stall7}
+                    alt="Event Slide 7"
                   />
                 </Carousel.Item>
               </Carousel>
@@ -211,28 +259,28 @@ export default function LandingPage() {
               >
                 <div className="image-wrapper bg-light">
                   <img
-                    src={Mars}
+                    src={Ma1600}
                     className="main-image"
-                    alt="MA-2100-V/H machine image"
+                    alt="MA1600V/570 machine image"
                   />
                   <img src={Robot} className="hover-image" alt="Robot image" />
                 </div>
                 <Card.Body>
                   <div className="content-default">
                     <Card.Title className="haitianColor cardTittleFont">
-                      MA2100V/h
+                      MA1600V/570
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 0.5L Bowl</p>
+                      <p className="m-0 p-0 haitianColor">Product: 4 cavity reflectors</p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: V1100 GD High Speed
+                        Robot: VD-1100ID
                       </p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
                         className="haitianColorButton"
                         size="large"
-                        onClick={() => navigate("/MA-2100-VH-product")}
+                        onClick={() => navigate("/MA1600V/570-product")}
                       >
                         <span className="learnMoreFont">Learn More</span>
                       </Button>
@@ -240,19 +288,19 @@ export default function LandingPage() {
                   </div>
                   <div className="content-hover">
                     <Card.Title className="haitianColor cardTittleFont">
-                      MA2100V/h
+                      MA1600V/570
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 0.5L Bowl</p>
+                      <p className="m-0 p-0 haitianColor">Product: 4 cavity reflectors</p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: V1100 GD High Speed
+                        Robot: VD-1100ID
                       </p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
                         className="haitianColorButton "
                         size="large"
-                        onClick={() => navigate("/MA-2100-VH-product")}
+                        onClick={() => navigate("/MA1600V/570-product")}
                       >
                         <span className="learnMoreFont">Learn More</span>
                       </Button>
@@ -262,74 +310,7 @@ export default function LandingPage() {
               </Card>
             </div>
 
-            {/* CARD 2 */}
-            {/* <div className="col-lg-3 mt-3 mt-lg-0"> */}
-            <div
-              ref={card2Ref}
-              className={`col-lg-3 mt-3 mt-lg-0 reveal-section delay2 ${
-                card2Visible ? "show" : ""
-              }`}
-            >
-              <Card
-                className={`product-card p-1  border border-1 border-muted ${
-                  active2 ? "active" : ""
-                }`}
-                {...createHandlers(setActive2)}
-              >
-                <div className="image-wrapper bg-light">
-                  <img
-                    src={ZEMachine}
-                    className="main-image"
-                    alt="ZE-3000-F machine image"
-                  />
-                  <img src={Robot} className="hover-image" alt="Robot image" />
-                </div>
-                <Card.Body>
-                  <div className="content-default">
-                    <Card.Title className="haitianColor cardTittleFont">
-                      ZE3000F/1100h
-                    </Card.Title>
-                    <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 2L Bucket</p>
-
-                      <p className="m-0 p-0 haitianColor">
-                        Robot: V1300 GD High Speed
-                      </p>
-                    </Card.Text>
-                    <div className="btn-wrapper">
-                      <Button
-                        className="haitianColorButton"
-                        size="large"
-                        onClick={() => navigate("/ZEF3000-1100h-product")}
-                      >
-                        <span className="learnMoreFont">Learn More</span>
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="content-hover">
-                    <Card.Title className="haitianColor cardTittleFont">
-                      ZE3000F/1100h
-                    </Card.Title>
-                    <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Product: 2L Bucket</p>
-
-                      <p className="m-0 p-0 haitianColor">
-                        Robot: V1300 GD High Speed
-                      </p>
-                    </Card.Text>
-                    <div className="btn-wrapper">
-                      <Button
-                        className="haitianColorButton"
-                        size="large"
-                        onClick={() => navigate("/ZEF3000-1100h-product")}
-                      >
-                        <span className="learnMoreFont">Learn More</span>
-                      </Button>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-            </div>
+           
 
             {/* CARD 3 */}
             {/* <div className="col-lg-3 mt-3 mt-lg-0"> */}
@@ -347,30 +328,30 @@ export default function LandingPage() {
               >
                 <div className="image-wrapper bg-light">
                   <img
-                    src={Ma3800}
+                    src={Ma4800}
                     className="main-image"
-                    alt="Ma-3800H/PRO machine image"
+                    alt="MA4800V/3200h machine image"
                   />
                   <img src={Robot} className="hover-image" alt="Robot image" />
                 </div>
                 <Card.Body>
                   <div className="content-default">
                     <Card.Title className="haitianColor cardTittleFont">
-                      MA 3800 H/PRO{" "}
+                      MA4800V/3200h{" "}
                     </Card.Title>
                     <Card.Text>
                       <p className="m-0 p-0 haitianColor">
-                        Product: 1L Bucket Cap
+                        Product: 22L Rubbish bins
                       </p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: V 1300GD High Speed
+                        Robot: V-1300
                       </p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
                         className="haitianColorButton"
                         size="large"
-                        onClick={() => navigate("/MA3800H-PRO-product")}
+                        onClick={() => navigate("/MA4800V/3200h-product")}
                       >
                         <span className="learnMoreFont">Learn More</span>
                       </Button>
@@ -378,21 +359,90 @@ export default function LandingPage() {
                   </div>
                   <div className="content-hover">
                     <Card.Title className="haitianColor cardTittleFont">
-                      MA 3800 H/PRO{" "}
+                      MA4800V/3200h{" "}
                     </Card.Title>
                     <Card.Text>
                       <p className="m-0 p-0 haitianColor">
-                        Product: 1L Bucket Cap
+                        Product: 22L Rubbish bins
                       </p>
                       <p className="m-0 p-0 haitianColor">
-                        Robot: V 1300GD High Speed
+                        Robot: V-1300
                       </p>
                     </Card.Text>
                     <div className="btn-wrapper">
                       <Button
                         className="haitianColorButton"
                         size="large"
-                        onClick={() => navigate("/MA3800H-PRO-product")}
+                        onClick={() => navigate("/MA4800V/3200h-product")}
+                      >
+                        <span className="learnMoreFont">Learn More</span>
+                      </Button>
+                    </div>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+
+             {/* CARD 2 */}
+            {/* <div className="col-lg-3 mt-3 mt-lg-0"> */}
+            <div
+              ref={card2Ref}
+              className={`col-lg-3 mt-3 mt-lg-0 reveal-section delay2 ${
+                card2Visible ? "show" : ""
+              }`}
+            >
+              <Card
+                className={`product-card p-1  border border-1 border-muted ${
+                  active2 ? "active" : ""
+                }`}
+                {...createHandlers(setActive2)}
+              >
+                <div className="image-wrapper bg-light">
+                  <img
+                    src={Ze4500}
+                    className="main-image"
+                    alt="ZE4500VF-1700hs machine image"
+                  />
+                  <img src={Robot} className="hover-image" alt="Robot image" />
+                </div>
+                <Card.Body>
+                  <div className="content-default">
+                    <Card.Title className="haitianColor cardTittleFont">
+                      ZE4500VF-1700hs
+                    </Card.Title>
+                    <Card.Text>
+                      <p className="m-0 p-0 haitianColor">Product: 4 cavity 1L Cheese box</p>
+
+                      <p className="m-0 p-0 haitianColor">
+                        Robot: VD-1300ID
+                      </p>
+                    </Card.Text>
+                    <div className="btn-wrapper">
+                      <Button
+                        className="haitianColorButton"
+                        size="large"
+                        onClick={() => navigate("/ZE4500VF-1700hs-product")}
+                      >
+                        <span className="learnMoreFont">Learn More</span>
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="content-hover">
+                    <Card.Title className="haitianColor cardTittleFont">
+                      ZE4500VF-1700hs
+                    </Card.Title>
+                    <Card.Text>
+                      <p className="m-0 p-0 haitianColor">Product: 4 cavity 1L Cheese box</p>
+
+                      <p className="m-0 p-0 haitianColor">
+                        Robot: VD-1300ID
+                      </p>
+                    </Card.Text>
+                    <div className="btn-wrapper">
+                      <Button
+                        className="haitianColorButton"
+                        size="large"
+                        onClick={() => navigate("/ZE4500VF-1700hs-product")}
                       >
                         <span className="learnMoreFont">Learn More</span>
                       </Button>
@@ -448,7 +498,7 @@ export default function LandingPage() {
               >
                 <div className="image-wrapper bg-light">
                   <img
-                    src={Haitian}
+                    src={Crusher}
                     className="main-image"
                     alt="Crusher image"
                   />
@@ -459,12 +509,41 @@ export default function LandingPage() {
                       Crusher
                     </Card.Title>
                     <Card.Text>
-                      <p className="m-0 p-0 haitianColor">Model: HTSS300/W</p>
+                      <p className="m-0 p-0 haitianColor">Model: HTGS320/W</p> 
                     </Card.Text>
                   </div>
                 </Card.Body>
               </Card>
             </div>
+
+            <div
+              ref={card5Ref}
+              className={`col-lg-3 mt-3 mt-lg-4 p5 reveal-section delay5 ${
+                card5Visible ? "show" : ""
+              }`}
+            >
+              <Card
+                className={`product-card p-1 border border-1 border-muted `}
+              >
+                <div className="image-wrapper bg-light">
+                  <img
+                    src={HTDL50FW}
+                    className="main-image"
+                    alt="HTDL50FW image"
+                  />
+                </div>
+                <Card.Body> 
+                  <div className="content-default">
+                    <Card.Title className="haitianColor cardTittleFont">
+                      Three in one HTDL-50F/W
+                    </Card.Title>
+                    <Card.Text>
+                      <p className="m-0 p-0 haitianColor">Model: HTDL-50F/W</p> 
+                    </Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>  
           </div>
         </div>
 

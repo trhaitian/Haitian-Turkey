@@ -11,9 +11,9 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/MA-2100-VH-product" element={<Page1 />} />
-        <Route path="/ZEF3000-1100h-product" element={<Page2 />} />
-        <Route path="/MA3800H-PRO-product" element={<Page3 />} />
+        <Route path="/MA1600V/570-product" element={<Page1 />} />
+        <Route path="/ZE4500VF-1700hs-product" element={<Page2 />} />
+        <Route path="/MA4800V/3200h-product" element={<Page3 />} />
       </Routes>
     </HashRouter>
   );

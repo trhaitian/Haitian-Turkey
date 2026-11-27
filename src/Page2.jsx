@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import HaitianLogo from "./Images/HaitianTurkeylogo.png";
 import EventLogo from "./Images/EventLogo.png";
-import Product3 from "./Images/Product3.png";
+import Product3 from "./Images/Cheesebox.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
@@ -97,42 +97,42 @@ export default function Page2() {
 
             <div className="spec-row">
               <span>Machine Type</span>
-              <span>ZEF3000/1100h</span>
+              <span>ZE4500VF-1700hs</span>
             </div>
 
             <div className="spec-row">
-              <span>Application</span>
-              <span>2L Bucket</span>
+              <span>Robot</span>
+              <span>VD-1300ID</span>
             </div>
 
             <div className="spec-row">
               <span>Shot weight</span>
-              <span>108gr</span>
+              <span>100gr</span>
             </div>
 
             <div className="spec-row">
               <span>Product size</span>
-              <span>2L</span>
+              <span>1L</span>
             </div>
 
             <div className="spec-row">
               <span>Wall thickness</span>
-              <span>0.55mm</span>
+              <span>0.5mm</span>
             </div>
 
             <div className="spec-row">
               <span>Cavities</span>
-              <span>2</span>
+              <span>4</span>
             </div>
 
             <div className="spec-row">
               <span>Material</span>
-              <span>MFI60 PP</span>
+              <span>MFI70 PP</span>
             </div>
 
             <div className="spec-row">
               <span>Cycle Time</span>
-              <span>5.5s</span>
+              <span>3.8s</span>
             </div>
 
             <div className="spec-row">

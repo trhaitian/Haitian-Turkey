@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import HaitianLogo from "./Images/HaitianTurkeylogo.png";
 import EventLogo from "./Images/EventLogo.png";
-import Product1 from "./Images/Product1.png";
+import Product1 from "./Images/Reflector.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
@@ -141,27 +141,27 @@ export default function Page1() {
 
             <div className="spec-row">
               <span>Machine Type</span>
-              <span>MA2100V/h</span>
+              <span>MA1600V/570</span>
             </div>
 
             <div className="spec-row">
-              <span>Application</span>
-              <span>0.5L Bowl</span>
+              <span>Robot</span>
+              <span>VD-1100ID</span>
             </div>
 
             <div className="spec-row">
               <span>Shot weight</span>
-              <span>135gr</span>
+              <span>105gr</span>
             </div>
 
             <div className="spec-row">
               <span>Product size</span>
-              <span>0.5L</span>
+              <span>110*85*7mm</span>
             </div>
 
             <div className="spec-row">
               <span>Wall thickness</span>
-              <span>1mm</span>
+              <span>2.5mm</span>
             </div>
 
             <div className="spec-row">
@@ -171,17 +171,17 @@ export default function Page1() {
 
             <div className="spec-row">
               <span>Material</span>
-              <span>MFI25 PP</span>
+              <span>PS</span>
             </div>
 
             <div className="spec-row">
               <span>Cycle Time</span>
-              <span>11s</span>
+              <span>18s</span>
             </div>
 
             <div className="spec-row">
               <span>Industry</span>
-              <span>Daily Products</span>
+              <span>Otomotiv Products</span>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import HaitianLogo from "./Images/HaitianTurkeylogo.png";
 import EventLogo from "./Images/EventLogo.png";
-import Product2 from "./Images/Product2.png";
+import Product2 from "./Images/RubbishBin.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
@@ -97,47 +97,47 @@ export default function Page3() {
 
             <div className="spec-row">
               <span>Machine Type</span>
-              <span>MA3800H/PRO</span>
+              <span>MA4800V/3200h</span>
             </div>
 
             <div className="spec-row">
               <span>Application</span>
-              <span>Cap</span>
+              <span>22L Rubbish bins</span>
             </div>
 
             <div className="spec-row">
               <span>Shot weight</span>
-              <span>50gr</span>
+              <span>495gr</span>
             </div>
 
             <div className="spec-row">
               <span>Product size</span>
-              <span>141*115*11mm</span>
+              <span>320*240*350mm</span>
             </div>
 
             <div className="spec-row">
               <span>Wall thickness</span>
-              <span>0.55mm</span>
+              <span>1.2mm</span>
             </div>
 
             <div className="spec-row">
               <span>Cavities</span>
-              <span>4</span>
+              <span>1</span>
             </div>
 
             <div className="spec-row">
               <span>Material</span>
-              <span>MFI60 PP</span>
+              <span>MFI 35</span>
             </div>
 
             <div className="spec-row">
               <span>Cycle Time</span>
-              <span>5.5s</span>
+              <span>16s</span>
             </div>
 
             <div className="spec-row">
               <span>Industry</span>
-              <span>Packing Products</span>
+              <span>Daily necessities</span>
             </div>
           </div>
         </div>
