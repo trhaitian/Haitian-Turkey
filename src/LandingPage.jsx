@@ -23,7 +23,7 @@ import Crusher from "./Images/Crusher.png";
 import HTDL50FW from "./Images/HTDL50FW.png"
 import Robot from "./Images/Robot.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAt, faGlobe, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 import confetti from "canvas-confetti";
@@ -566,20 +566,28 @@ export default function LandingPage() {
                   }
                 />
               </div>
+              {/* Contact Person */}
+<div className="col-12 col-lg-2 footer-item">
+                  <FontAwesomeIcon icon={faUser} />
+
+  <span className="haitianColor fw-semibold ms-2">
+    Jamen Wang
+  </span>
+</div>
 
               {/* Phone */}
-              <div className="col-12 col-lg-3 footer-item">
+              <div className="col-12 col-lg-2 footer-item">
                 <FontAwesomeIcon icon={faPhone} />
                 <a
                   className="ms-2 haitianColor text-decoration-none"
                   href="tel:+905323581889"
                 >
-                  +90 532 358 1889
+                  +90 536 882 39 75
                 </a>
               </div>
 
               {/* Website */}
-              <div className="col-12 col-lg-3 footer-item">
+              <div className="col-12 col-lg-2 footer-item">
                 <FontAwesomeIcon icon={faGlobe} />
                 <a
                   href="https://www.haitian.com.tr/"
@@ -598,7 +606,7 @@ export default function LandingPage() {
                   href="mailto:bulent.yuksel@haitian.com.tr"
                   className="ms-2 haitianColor text-decoration-none"
                 >
-                  bulent.yuksel@haitian.com.tr
+                  wmj13575@mail.haitian.com
                 </a>
               </div>
             </div>
